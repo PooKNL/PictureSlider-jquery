@@ -5,17 +5,18 @@
 
 #container {
   width: 100%;
-  height: 700px;
+  height: 704px;
   overflow: hidden;
-  background: #ff00ff;
+  background: #FFFFFF;
 }
 
-#slideshow {
+#slideshow img {
   height: 100%;
   width: 100%;
 }
 
 #pager {
+  text-align: center;
   height: 120px;
   width: 100%;
   position: absolute;
@@ -25,9 +26,9 @@
   opacity: 0;
   transition: all 0.3 ease-in-out 0s;
 }
+
 #pager:hover {
   opacity: 1;
-
 }
 
 #prev {
@@ -38,6 +39,7 @@
   bottom: 0;
   left: 0;
   margin: auto 10px;
+  z-index: 1000;
 }
 
 #next {
@@ -48,4 +50,17 @@
   bottom: 0;
   right: 0;
   margin: auto 10px;
+  z-index: 1000;
+}
+
+#pager img {
+  margin: 10px 5px;
+  opacity: 0.3;
+  transition: all .3s ease-in-out 0s;
+}
+
+#pager img:hover {
+  opacity: 1;
+  transform: scale(1.05);
+  z-index: 100;
 }

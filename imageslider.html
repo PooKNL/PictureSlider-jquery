@@ -4,23 +4,36 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="imageslider.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/cycle2.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="imageslider.css">
   <title>Slideshow for Images</title>
 </head>
 <body>
 
   <div id="container">
-    <div id="slideshow">
-      <img src="img/Wally1.jpg" alt="">
-      <img src="img/Wally2.jpg" alt="">
-      <img src="img/Wally3.jpg" alt="">
-      <img src="img/Wally4.jpg" alt="">
-    </div>
-    <div id="pager"></div>
-    <img id="prev"src=""/>
-    <img id="next"src=""/>
+      <div id="slideshow" class="cycle-slideshow"
+          data-cycle-fx = "fade"
+          data-cycle-speed = "600"
+          data-cycle-timeout = "3000"
+          data-cycle-pager = "#pager"
+          data-cycle-pager-template ="<a href='#'><img src='{{src}}' height=120 width=180/>"
+          data-cycle-next = "#next"
+          data-cycle-prev = "#prev"
+          data-cycle-manual-fx = "scrollHorz"
+          data-cycle-manual-speed = "400"
+          data-cycle-pager-fx = "fade">
+            <img src="img/Wally1.JPG" alt="">
+            <img src="img/Wally2.JPG" alt="">
+            <img src="img/Wally3.JPG" alt="">
+            <img src="img/Wally4.JPG" alt="">
+            <img src="img/Wally5.JPG" alt="">
+            <img src="img/Wally6.JPG" alt="">
+            <img src="img/Wally7.JPG" alt="">
+      </div>
+      <div id="pager"></div>
+        <img id="prev" src="img/prev1.svg"/>
+        <img id="next" src="img/next1.svg"/>
   </div>
 
 </body>
